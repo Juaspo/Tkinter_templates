@@ -75,7 +75,6 @@ class MainApplication(tk.Tk):
         frame = self.frames[cont]
         frame.tkraise()
 
-    # def create_labels(self, nr_of_labels, frame):
 
 ########################################## Example pages ##########################################
 
@@ -132,5 +131,7 @@ class LabelTwo(tk.Frame): # Example to create multiple labels (grey)
             label.pack()
 
 
-app = MainApplication()
-app.mainloop()
+if __name__ == '__main__':
+    # Run app if started as main
+    app = MainApplication()
+    app.mainloop()
